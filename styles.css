@@ -1,4 +1,4 @@
-/* Universal Styling */
+/** Universal Styling **/
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif, serif;
 }
 
-/* Colours */
+/** Colours **/
 
 :root {
   --PrimaryRed: hsl(4, 100%, 67%);
@@ -20,7 +20,9 @@ body {
   --White: hsl(0 0%, 100%);
 }
 
-/* Mobile View */
+/** Mobile View **/
+
+/* Mobile Form */
 
 .card-img-container,
 .card-img {
@@ -107,3 +109,5 @@ input {
   background-color: var(--Blue700);
   color: var(--White);
 }
+
+/* Mobile Success */
