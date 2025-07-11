@@ -23,8 +23,9 @@
   </head>
   <body>
     <main class="card">
-      <div class="card-img">
+      <div class="card-img-container">
         <img
+          class="card-img"
           src="./assets/images/illustration-sign-up-mobile.svg"
           alt="form illustration"
         />
@@ -35,31 +36,46 @@
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <ul>
             <li>
-              <img src="./assets/images/icon-list.svg" alt="tick icon" />
-              Product discovery and building what matters
+              <img
+                class="tick-icon"
+                src="./assets/images/icon-list.svg"
+                alt="tick icon"
+              />
+              <p>Product discovery and building what matters</p>
             </li>
             <li>
               <img
+                class="tick-icon"
                 src="./assets/images/icon-list.svg"
                 alt="tick icon"
-              />Measuring to ensure updates are a success
+              />
+              <p>Measuring to ensure updates are a success</p>
             </li>
             <li>
-              <img src="./assets/images/icon-list.svg" alt="tick icon" />And
-              much more!
+              <img
+                class="tick-icon"
+                src="./assets/images/icon-list.svg"
+                alt="tick icon"
+              />
+              <p>And much more!</p>
             </li>
           </ul>
         </div>
-        <div class="form-submission">
+        <div class="form-container">
           <form action="">
-            <label for="email">Email address</label>
+            <label for="email"><strong>Email address</strong></label>
             <input
               id="email"
+              class="email-input"
               name="email"
               type="email"
               placeholder="email@company.com"
             />
-            <input type="submit" value="Subscribe to monthly newsletter" />
+            <input
+              class="submit"
+              type="submit"
+              value="Subscribe to monthly newsletter"
+            />
           </form>
         </div>
       </article>
