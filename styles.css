@@ -164,3 +164,67 @@ input {
   );
   border-color: transparent;
 }
+
+@media screen and (min-width: 46.5em) {
+  body {
+    background-color: var(--Blue700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    width: 80%;
+    height: 62em;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 2em;
+    padding: 4em 0;
+  }
+
+  .card-img-container {
+    width: 33em;
+    height: 22.39em;
+    padding: 0;
+  }
+
+  .card-img {
+    border-radius: 2em;
+    margin-top: 1em;
+  }
+
+  .card-form-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    padding: 0 4em;
+  }
+
+  .form-text {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 0.6em 0;
+    font-size: 3em;
+  }
+
+  li {
+    margin-bottom: -1.5em;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  label,
+  input {
+    margin-bottom: 1.2em;
+  }
+}
