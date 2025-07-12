@@ -129,6 +129,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--White);
 }
 
 .success-content {
@@ -142,6 +143,10 @@ input {
 
 .subscribe-title {
   font-size: 2.5em;
+}
+
+.subscribe-text {
+  line-height: 150%;
 }
 
 .dismiss-btn {
@@ -228,7 +233,37 @@ input {
   input {
     margin-bottom: 1.2em;
   }
+
+  /* Success Card */
+
+  .success-card {
+    width: 31.5em;
+    height: 32.5em;
+    border-radius: 2em;
+    padding: 4em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .success-content {
+    height: 23.5em;
+    width: 100%;
+  }
+
+  .dismiss-btn {
+    margin-top: 0;
+  }
+
+  .success-img {
+    margin-bottom: 0;
+  }
+
+  .subscribe-title {
+    font-size: 3em;
+    margin: 0.4em 0;
+  }
 }
+
 @media screen and (min-width: 90em) {
   .card {
     display: grid;
