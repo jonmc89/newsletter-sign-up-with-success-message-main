@@ -47,6 +47,10 @@ body {
   width: 20.4375em;
 }
 
+.form-container {
+  position: relative;
+}
+
 .form-text {
   margin-bottom: 1em;
 }
@@ -119,6 +123,14 @@ input {
     var(--PrimaryRed)
   );
   border-color: transparent;
+}
+
+.error-message {
+  position: absolute;
+  display: none;
+  right: 0em;
+  color: var(--PrimaryRed);
+  font-weight: bold;
 }
 
 /* Mobile Success */

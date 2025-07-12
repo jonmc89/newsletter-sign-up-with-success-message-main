@@ -62,7 +62,8 @@
           </ul>
         </div>
         <div class="form-container">
-          <form action="">
+          <p id="errorMessage" class="error-message">Valid email required</p>
+          <form id="emailForm" action="" novalidate>
             <label for="email"><strong>Email address</strong></label>
             <input
               id="email"
@@ -72,6 +73,7 @@
               placeholder="email@company.com"
             />
             <input
+              id="submitBtn"
               class="submit"
               type="submit"
               value="Subscribe to monthly newsletter"
