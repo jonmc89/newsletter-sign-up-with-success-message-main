@@ -1,0 +1,29 @@
+/* || Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --grey: #949494;
+  --white: #fff;
+  --blue-700: #36384d;
+  --blue-800: #242742;
+  --red: #ff6155;
+  --gradient-4: linear-gradient(#ff6a3a, #ff527b);
+  --text-preset-1-fs: 3.5rem;
+  --text-preset-1-fw: 700;
+  --text-preset-1-mob-fs: 2.5rem;
+  --text-preset-1-mob-fw: 700;
+  --text-preset-2-bold-fs: 1rem;
+  --text-preset-2-bold-fw: 700;
+  --text-preset-2-bold-lh: 150%;
+  --text-preset-2-reg-fs: 1rem;
+  --text-preset-2-reg-fw: 400;
+  --text-preset-2-reg-lh: 150%;
+  --text-preset-3-fs: 0.75rem;
+  --text-preset-3-fw: 700;
+  --text-preset-3-lh: 150%;
+}
