@@ -37,6 +37,7 @@ body {
 
 .card {
   background-color: #fff;
+  position: relative;
 }
 
 .img-container {
@@ -157,6 +158,49 @@ button:hover {
   list-style: var(--text-preset-3-lh);
 }
 
+.success-screen {
+  background-color: #fff;
+  display: none;
+  align-items: center;
+  top: 0;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.success-message {
+  display: flex;
+  height: 38.9375rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.success-img,
+h2 {
+  margin-block-end: 2rem;
+}
+
+h2 {
+  color: var(--blue-800);
+  font-size: var(--text-preset-1-mob-fs);
+  font-weight: var(--text-preset-1-mob-fw);
+}
+
+.success-text {
+  color: var(--blue-800);
+  font-size: var(--text-preset-2-reg-fs);
+  font-weight: var(--text-preset-2-reg-fw);
+  line-height: var(--text-preset-2-reg-lh);
+}
+
+.success-screen-visible {
+  display: flex;
+  z-index: 99;
+}
+
+.hide-form {
+  display: none !important;
+}
+
 @media screen and (min-width: 51.25rem) {
   body {
     align-items: center;
@@ -185,6 +229,21 @@ button:hover {
     font-size: var(--text-preset-1-fs);
     font-weight: var(--text-preset-1-fw);
   }
+
+  .success-screen {
+    border-radius: 2.25rem;
+    padding: 2.5rem;
+    height: 32.5rem;
+    width: 31.5rem;
+  }
+
+  .success-message {
+    height: auto;
+  }
+
+  .success-text {
+    margin-block-end: 2rem;
+  }
 }
 
 @media screen and (min-width: 90rem) {
@@ -206,6 +265,21 @@ button:hover {
   h1,
   .main-text,
   .custom-list {
+    margin-block-end: 2rem;
+  }
+
+  .success-screen {
+    border-radius: 2.25rem;
+    padding: 2.5rem;
+    height: 32.5rem;
+    width: 31.5rem;
+  }
+
+  .success-message {
+    height: auto;
+  }
+
+  .success-text {
     margin-block-end: 2rem;
   }
 }

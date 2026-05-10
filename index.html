@@ -23,7 +23,7 @@
   </head>
   <body>
     <main>
-      <article class="card">
+      <article id="card" class="card">
         <div class="img-container"></div>
         <div class="text-form-container">
           <div class="text-container">
@@ -77,6 +77,26 @@
               </button>
             </form>
           </div>
+        </div>
+      </article>
+      <article id="successScreen" class="success-screen">
+        <div class="success-message">
+          <div class="success-text-container">
+            <img
+              class="success-img"
+              src="./assets/images/icon-success.svg"
+              alt=""
+            />
+            <h2>Thanks for subscribing!</h2>
+            <p class="success-text">
+              A confirmation email has been sent to
+              <strong>ash@loremcompany.com</strong>. Please open it and click
+              the button inside to confirm your subscription.
+            </p>
+          </div>
+          <button id="dismissBtn" class="dismiss-btn" type="button">
+            Dismiss message
+          </button>
         </div>
       </article>
     </main>
