@@ -12,6 +12,7 @@
   --blue-700: #36384d;
   --blue-800: #242742;
   --red: #ff6155;
+  --error-bg: #ffcfcb;
   --gradient-4: linear-gradient(#ff6a3a, #ff527b);
   --text-preset-1-fs: 3.5rem;
   --text-preset-1-fw: 700;
@@ -93,16 +94,23 @@ form {
   flex-direction: column;
 }
 
+.label-error {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 0.5rem;
+}
+
 label {
   font-size: var(--text-preset-3-fs);
   font-weight: var(--text-preset-3-fw);
   list-style: var(--text-preset-3-lh);
-  margin-block-end: 0.5rem;
 }
 
 input {
-  border: 0.1rem solid var(--grey);
+  border: 0.1rem solid var(--blue-800);
   border-radius: 0.5rem;
+  color: var(--blue-800);
   font-size: var(--text-preset-2-reg-fs);
   font-weight: var(--text-preset-2-reg-fw);
   line-height: var(--text-preset-2-reg-lh);
@@ -112,6 +120,18 @@ input {
 
 input:focus {
   outline-color: var(--blue-800);
+}
+
+.input-valid {
+  background-color: #fff;
+  border: 0.1rem solid var(--blue-800);
+  color: var(--blue-800);
+}
+
+.input-invalid {
+  background-color: var(--error-bg);
+  border-color: var(--red);
+  color: var(--red);
 }
 
 button {
@@ -128,6 +148,13 @@ button {
 
 button:hover {
   background: linear-gradient(#ff6a3a, #ff527b);
+}
+
+.error-message {
+  color: var(--red);
+  font-size: var(--text-preset-3-fs);
+  font-weight: var(--text-preset-3-fw);
+  list-style: var(--text-preset-3-lh);
 }
 
 @media screen and (min-width: 51.25rem) {
